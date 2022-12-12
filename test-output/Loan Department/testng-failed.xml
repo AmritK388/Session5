@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Loan Department]">
+  <parameter name="APIKey/username" value="123456"/>
+  <parameter name="URL" value="carloan.com"/>
+  <test name="Personal Loan">
+    <parameter name="URL" value="personalloan.com"/>
+    <classes>
+      <class name="testng.loginTest">
+        <methods>
+          <include name="Demo"/>
+        </methods>
+      </class> <!-- testng.loginTest -->
+      <class name="testng.loginTest2"/>
+      <class name="testng.loginTest4"/>
+    </classes>
+  </test> <!-- Personal Loan -->
+  <test name="Car Loan">
+    <parameter name="APIKey/username" value="123456"/>
+    <parameter name="URL" value="carloan.com"/>
+    <classes>
+      <class name="testng.loginTest3">
+        <methods>
+          <exclude name="Mobilelogincarloan"/>
+        </methods>
+      </class> <!-- testng.loginTest3 -->
+    </classes>
+  </test> <!-- Car Loan -->
+</suite> <!-- Failed suite [Loan Department] -->

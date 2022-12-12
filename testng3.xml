@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+  
+  <test name="Regression">
+  			<groups>
+  				<run>
+  						<include name ="Smoke"/>
+  					</run>
+  			</groups>
+    <classes>
+      <class name="testng.loginTest"/>
+		<class name="testng.loginTest2"/>
+		  <class name="testng.loginTest4"/>	
+  			<class name="testng.loginTest3"/>  		
+  	</classes>
+  </test> 
+</suite> 
